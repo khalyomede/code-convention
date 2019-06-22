@@ -15,6 +15,8 @@ Set of guidelines I built from my developper experience. Gathered here to remind
 - [Function returning the value of a boolean property](#function-returning-the-value-of-a-boolean-property)
 - [Function returning an array](#function-returning-an-array)
 - [Function checking if has element](#function-checking-if-has-element)
+- [Function removing an element](#function-removing-an-element)
+- [Function removing multiple elements](#function-removing-multiple-elements)
 
 ### Function updating a boolean property
 
@@ -77,6 +79,32 @@ class Router {
 		return Router._routes.includes(route);
 	}
 }
+```
+
+### Function removing an element
+
+- Use kebab case
+- Singular naming
+- Prefixed with `remove`
+
+```javascript
+function removeNotification() {}
+```
+
+### Function removing multiple elements
+
+- Use kebab case
+- Plural naming
+- Prefixed with `remove`
+
+```javascript
+function removeImages() {}
+```
+
+If the subject is not pluralizable, suffix it with `list`:
+
+```javascript
+function removeFluxList() {}
 ```
 
 ## Variable naming
